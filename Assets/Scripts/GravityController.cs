@@ -17,6 +17,7 @@ public class GravityController : MonoBehaviour
 
     public void EnableGravity()
     {
+        Debug.Log("gravity enabled");
         rb.useGravity = true;
         rb.isKinematic = false;
         rb.transform.SetParent(RightHand);
@@ -24,6 +25,7 @@ public class GravityController : MonoBehaviour
 
     public void StopGrab()
     {
+        Debug.Log("thrown");
         rb.transform.SetParent(null);
         rb.isKinematic = false;
         rb.AddForce(0, 0, thrust, ForceMode.Impulse);
