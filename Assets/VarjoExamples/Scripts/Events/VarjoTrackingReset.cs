@@ -31,7 +31,7 @@ namespace VarjoExample
             if (Input.GetKeyDown(trackingResetKey))
             {
                 rig.transform.SetParent(nextWorld);
-                rig.transform.position = new Vector3((float)-0.56, (float)-0.37, (float)-0.11);
+                rig.transform.position = new Vector3((float)-0.56, (float)-0.2, (float)-0.11);
 
                 //VarjoPlugin.ResetPose(resetPosition, resetRotation);
             }
